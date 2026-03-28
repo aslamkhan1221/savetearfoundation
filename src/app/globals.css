@@ -1,0 +1,83 @@
+:root {
+  --primary-green: #76a84c;
+  --primary-yellow: #f1b42f;
+  --primary-navy: #2e3192;
+  --secondary-navy: #1a1a4b;
+  --light-gray: #f8f8f8;
+  --white: #ffffff;
+  --black: #000000;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter), sans-serif;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-block;
+}
+
+.btn-donate {
+  background-color: var(--primary-green);
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn-donate:hover {
+  background-color: #638c41;
+}
+
+/* Wavy Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  font-family: 'Brush Script MT', cursive, sans-serif; /* Placeholder for the script font */
+  margin-bottom: 10px;
+}
+
+.section-header .wave-underline {
+  width: 120px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='10' viewBox='0 0 120 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5C10 5 10 0 20 0C30 0 30 5 40 5C50 5 50 0 60 0C70 0 70 5 80 5C90 5 90 0 100 0C110 0 110 5 120 5' stroke='%23f1b42f' stroke-width='2'/%3E%3Cpath d='M0 9C10 9 10 4 20 4C30 4 30 9 40 9C50 9 50 4 60 4C70 4 70 9 80 9C90 9 90 4 100 4C110 4 110 9 120 9' stroke='%23f1b42f' stroke-width='2'/%3E%3C/svg%3E");
+  margin: 0 auto;
+}

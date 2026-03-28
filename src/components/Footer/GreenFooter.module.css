@@ -1,0 +1,80 @@
+.footer {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 60px 0 20px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    gap: 60px;
+}
+
+.column h4 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 15px 0 25px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.column ul li:hover {
+    text-decoration: underline;
+}
+
+.companyInfo .item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+.socialGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.socialItem {
+    font-size: 3rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

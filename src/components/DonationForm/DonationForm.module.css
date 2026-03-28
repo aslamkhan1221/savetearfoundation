@@ -1,0 +1,159 @@
+.donationCard {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    position: sticky;
+    top: 100px;
+    border: 1px solid #f0f0f0;
+
+}
+
+.donationCard h2 {
+    color: var(--primary-navy);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.amountGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.amountBtn {
+    padding: 10px;
+    border: 2px solid #eee;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.amountBtn:hover {
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.amountBtn.active {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: #fff;
+}
+
+.customAmount {
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency {
+    position: absolute;
+    left: 12px;
+    color: #666;
+    font-weight: 600;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px 12px 12px 30px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.inputField:focus {
+    border-color: var(--primary-green);
+}
+
+.donorForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.donorInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.donorInput:focus {
+    border-color: var(--primary-navy);
+}
+
+.totalSection {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px dashed #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalLabel {
+    font-weight: 600;
+    color: #666;
+}
+
+.totalAmount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+}
+
+.donateBtn {
+    width: 100%;
+    background: var(--primary-green);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.donateBtn:hover {
+    background: #638c41;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(118, 168, 76, 0.3);
+}
+
+.secureText {
+    margin-top: 15px;
+    font-size: 0.75rem;
+    color: #999;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (max-width: 1024px) {
+    .donationCard {
+        position: static;
+        margin-top: 40px;
+    }
+}

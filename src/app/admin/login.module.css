@@ -1,0 +1,45 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f8f8f8;
+}
+
+.loginBox {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.loginBox h1 {
+    margin-bottom: 30px;
+    color: var(--primary-navy);
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.field input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

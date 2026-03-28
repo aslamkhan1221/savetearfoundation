@@ -1,0 +1,68 @@
+.initiativeSection {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-left: 4px solid var(--primary-green);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.answer {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.think {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.paragraphs p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.boldTitle {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 30px;
+}
+
+.list {
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.bullet {
+    color: var(--primary-yellow);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.action {
+    text-align: center;
+}

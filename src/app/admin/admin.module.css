@@ -1,0 +1,152 @@
+.adminContainer {
+    padding: 40px 0;
+    min-height: 80vh;
+}
+
+.adminContainer h1 {
+    margin: 0;
+    color: var(--primary-navy);
+}
+
+.adminHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logoutBtn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logoutBtn:hover {
+    background: #333;
+}
+
+.adminGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .adminGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.adminSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--primary-green);
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.slideList {
+    display: grid;
+    gap: 15px;
+}
+
+.slideItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.slideInfo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.thumb {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.slideInfo h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.slideInfo p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.deleteBtn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.editBtn {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.deleteBtn:hover {
+    background: #cc0000;
+}

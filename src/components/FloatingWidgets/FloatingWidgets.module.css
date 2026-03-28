@@ -1,0 +1,110 @@
+.sideWidgets {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.contactUsTab {
+    background-color: #373669;
+    color: white;
+    padding: 20px 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-radius: 5px 0 0 0px;
+    cursor: pointer; 
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0px;
+    width: 50px;
+    font-size: 20px;
+}
+
+.socialStack {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.socialStack a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.phoneWidget {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    background-color: var(--primary-navy);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.backToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: white;
+    color: #333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.whatsappFloat {
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.whatsappFloat img {
+    width: 100%;
+}

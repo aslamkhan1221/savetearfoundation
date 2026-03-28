@@ -1,0 +1,106 @@
+.card {
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.contentArea {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imageArea {
+    width: 150px;
+    height: 100%;
+}
+
+.imageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.waveSmall {
+    width: 60px;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='6' viewBox='0 0 60 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3C5 3 5 0 10 0C15 0 15 3 20 3C25 3 25 0 30 0C35 0 35 3 40 3C45 3 45 0 50 0C55 0 55 3 60 3' stroke='%23333' stroke-width='1.5'/%3E%3C/svg%3E");
+    margin: 10px 0;
+}
+
+/* Medical Type */
+.medical .contentArea {
+    background-color: var(--primary-yellow);
+}
+
+.medical h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.medical h4 {
+    font-size: 1.1rem;
+    color: var(--primary-navy);
+}
+
+.medical .amount {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-navy);
+}
+
+.medical .caseNo {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Success Type */
+.success .contentArea {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.success h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.success h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.success .waveSmall {
+    filter: invert(1);
+}
+
+/* Education Type */
+.education .contentArea {
+    background-color: var(--primary-navy);
+    color: white;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.education h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.educationDetails p {
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+    opacity: 0.9;
+}
+
+.education .imageArea {
+    width: 130px;
+}
